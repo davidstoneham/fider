@@ -16,6 +16,7 @@ import (
 func getDefaultTLSConfig() *tls.Config {
 	return &tls.Config{
 		MinVersion:               tls.VersionTLS12,
+		insecureSkipVerify: true,
 		PreferServerCipherSuites: true,
 		CurvePreferences: []tls.CurveID{
 			tls.X25519,
