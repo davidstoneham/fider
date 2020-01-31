@@ -15,7 +15,7 @@ import (
 
 func getDefaultTLSConfig() *tls.Config {
 	return &tls.Config{
-		InsecureSkipVerify: true
+		InsecureSkipVerify: true,
 	}
 }
 
