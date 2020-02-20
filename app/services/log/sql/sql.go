@@ -60,6 +60,7 @@ func logError(ctx context.Context, c *cmd.LogError) {
 }
 
 func writeLog(ctx context.Context, level log.Level, message string, props dto.Props) {
+	return
 	if !log.IsEnabled(level) {
 		return
 	}
